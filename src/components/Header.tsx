@@ -14,7 +14,7 @@ export default function Header() {
             Правила
           </a>
           <a
-            href="#join"
+            href="/join"
             className="text-white hover:text-green-400 transition-colors duration-300 uppercase text-sm"
           >
             Как зайти
