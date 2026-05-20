@@ -43,9 +43,14 @@ export default function HeroContent() {
               Узнать IP
             </button>
           )}
-          <button className="px-8 py-3 rounded-full bg-green-500 text-white font-normal text-xs transition-all duration-200 hover:bg-green-400 cursor-pointer">
-            Подключиться
-          </button>
+          <a
+            href="https://t.me/NMLRIXFANMC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-full bg-green-500 text-white font-normal text-xs transition-all duration-200 hover:bg-green-400 cursor-pointer"
+          >
+            Наш ТГ
+          </a>
         </div>
       </div>
     </main>
