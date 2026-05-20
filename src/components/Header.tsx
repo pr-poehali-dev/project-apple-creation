@@ -8,7 +8,7 @@ export default function Header() {
         </div>
         <nav className="flex gap-8">
           <a
-            href="#rules"
+            href="/rules"
             className="text-white hover:text-green-400 transition-colors duration-300 uppercase text-sm"
           >
             Правила
