@@ -1,4 +1,8 @@
+import { useState } from "react"
+
 export default function HeroContent() {
+  const [showIp, setShowIp] = useState(false)
+
   return (
     <main className="absolute bottom-8 left-8 z-20 max-w-lg">
       <div className="text-left">
@@ -27,9 +31,18 @@ export default function HeroContent() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4 flex-wrap">
-          <button className="px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
-            Узнать IP
-          </button>
+          {showIp ? (
+            <div className="flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 border border-green-400/50 backdrop-blur-sm">
+              <span className="text-green-400 text-xs font-mono font-medium">nmlrix.hypixel.ws</span>
+            </div>
+          ) : (
+            <button
+              onClick={() => setShowIp(true)}
+              className="px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer"
+            >
+              Узнать IP
+            </button>
+          )}
           <button className="px-8 py-3 rounded-full bg-green-500 text-white font-normal text-xs transition-all duration-200 hover:bg-green-400 cursor-pointer">
             Подключиться
           </button>
